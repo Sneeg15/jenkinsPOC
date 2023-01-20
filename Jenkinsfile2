@@ -10,9 +10,9 @@ pipeline {
         registryUrl = 'mydemoacrpoc.azurecr.io'
     }
      
-     parameters{
-          choice(name: 'branch', choices:['main', 'Dev'], description: 'Branch choice')
-     }
+     //parameters{
+         // choice(name: 'branch', choices:['main', 'Dev'], description: 'Branch choice')
+    // }
     
         stages {
        
