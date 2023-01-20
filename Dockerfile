@@ -1,2 +1,3 @@
-From python:latest
+FROM python:latest
+
 CMD ["python", "app.py"]
