@@ -35,7 +35,7 @@ pipeline {
     stage('Remove Unused docker image'){
      steps{
           script{
-               sh "docker rmi $registry:$BUILD_NUMBER"
+               sh "docker rmi $registryName:$BUILD_NUMBER"
                }
          }
     }
@@ -48,12 +48,12 @@ pipeline {
         // }
       // }
       
-    stage('Docker Run') {
-     steps{
-         script {
-                sh 'docker run -d -p 8096:5000 --rm --name mypythonContainer ${registryUrl}/${registryName}'
-            }
-      }
-    }
+    //stage('Docker Run') {
+     //steps{
+         //script {
+                //sh 'docker run -d -p 8096:5000 --rm --name mypythonContainer ${registryUrl}/${registryName}'
+           // }
+     // }
+   // }
     }
  }
