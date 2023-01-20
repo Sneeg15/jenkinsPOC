@@ -11,7 +11,7 @@ pipeline {
     }
      
      parameters{
-          choice(name: 'branch', choices['main', 'Dev'], description: 'Branch choice')
+          choice(name: 'branch', choices:['main', 'Dev'], description: 'Branch choice')
      }
     
         stages {
